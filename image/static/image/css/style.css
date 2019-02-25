@@ -1,0 +1,36 @@
+body {
+    padding-top: 2%;
+    background-color: #3E5050;
+}
+
+input, .btn {
+    margin: auto;
+    width: 100%;
+    box-shadow: 1px 1px 1px rgba(39, 39, 39, 0.56), 0 1px 1px 1px rgba(39, 39, 39, 0.56);
+}
+
+.btn {
+    background-color: #3E5050;
+    color: white;
+}
+
+.btn:hover {
+    color: #3E5050;
+    background-color: white;
+}
+
+h3 {
+    text-shadow: 1px 1px rgba(39, 39, 39, 0.56);
+}
+
+.topForm {
+    color: whitesmoke;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    padding: 5% 5%;
+    background-color: #28AB5D;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px rgba(39, 39, 39, 0.56), -1px 1px rgba(39, 39, 39, 0.56), 0 2px 2px 2px rgba(39, 39, 39, 0.56);
+}
