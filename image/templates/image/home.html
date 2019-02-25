@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+       <!-- {% if images %}
+            <form action="/band/delete-folder/" method="post">
+            {% csrf_token %}
+            <input type="submit" value="Delete Images"/>
+            </form>
+        {% else %} -->
+            <form action="/canopus/return-weights/" method="post">
+                {% csrf_token %}
+                <input type="text" name="input1" />
+                <input type="text" name="input2" />
+                <input type="submit" value="Download Images"/>
+            </form>
+    </div>
+</body>
+</html>
