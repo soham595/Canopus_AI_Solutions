@@ -16,6 +16,10 @@ def home(request):
     return render(request, 'image/home.html')
 
 
+def imgClass(request):
+    return render(request, 'image/imgclass.html')
+
+
 def deepDreams(request):
     return render(request, 'image/deepdreams.html')
 
@@ -43,7 +47,7 @@ def styleUpload(request):
     tmp_file = os.path.join(settings.MEDIA_ROOT, path)
     return render(request, 'image/home.html')
 
-
+'''
 def ScrapImages(cat, links):
     try:
         os.makedirs("Images/%s" % cat)
@@ -76,15 +80,6 @@ def ScrapImages(cat, links):
                 download_img = urllib2.urlopen(img_link)
                 txt.write(download_img.read())
                 txt.close()
-
-
-def downloadImages(keywords):
-    response = google_images_download.googleimagesdownload()  # class instantiation
-
-    arguments = {"keywords": keywords, "limit": 5, "print_urls": True,
-                 "output_directory": "Images"}  # creating list of arguments
-    paths = response.download(arguments)  # passing the arguments to the function
-    print(paths)  # printing absolute paths of the downloaded images
 
 
 def imageLinks():
@@ -132,6 +127,15 @@ def imageLinks():
     ]
 
     # ScrapImages("wardrobe",linksWardrobe)
+'''
+
+def downloadImages(keywords):
+    response = google_images_download.googleimagesdownload()  # class instantiation
+
+    arguments = {"keywords": keywords, "limit": 5, "print_urls": True,
+                 "output_directory": "Images"}  # creating list of arguments
+    paths = response.download(arguments)  # passing the arguments to the function
+    print(paths)  # printing absolute paths of the downloaded images
 
 
 def calculateWeights(request):

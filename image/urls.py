@@ -6,6 +6,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^$', views.home, name='index'),
     url(r'return-weights/', views.calculateWeights, name='scrape'),
+    url(r'img-class/', views.imgClass, name='img'),
     url(r'deep-dreams/', views.deepDreams, name='dream'),
     url(r'style-trans/', views.styleTransfer, name='style'),
     url(r'imageUpload/', views.imageUpload, name='imageupload'),
