@@ -34,6 +34,23 @@ h3 {
     box-shadow: 1px 1px 1px rgba(39, 39, 39, 0.56), -1px 1px rgba(39, 39, 39, 0.56), 0 2px 2px 2px rgba(39, 39, 39, 0.56);
 }
 
+.rowBot {
+    margin-top: 20%;
+}
+
+.homeCard {
+    color: #28AB5D;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 500px;
+    padding: 5% 5%;
+    background-color: rgba(0, 0, 0, 0.41);
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px rgba(39, 39, 39, 0.56), -1px 1px rgba(39, 39, 39, 0.56), 0 2px 2px 2px rgba(39, 39, 39, 0.56);
+}
+
 #nav-bar {
     background-color: #28AB5D;
     height: 50px;
