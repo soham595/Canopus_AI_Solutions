@@ -4,6 +4,9 @@
 bin/
 gen/
 out/
+canopus/__pycache__/
+image/__pycache__/
+image/migrations/
 
 build/
 

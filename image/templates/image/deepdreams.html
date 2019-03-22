@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canopus Image Processing Playground</title>
+    <title>Deep Dreams</title>
     <link rel="stylesheet" href="{% static 'image/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'image/css/style.css' %}">
 
@@ -25,7 +25,7 @@
         </div>
         <div class="collapse navbar-collapse" id="ntopnav">
             <ul class="nav navbar-nav">
-                <li><a href="/canopus/img-class/">Image Classification</a></li>
+                <li><a href="/">Image Classification</a></li>
                 <li><a href="/canopus/deep-dreams/">Deep Dreams</a></li>
                 <!--<li class="dropdown">
                     <a class="dropbtn" href="" data-toggle="dropdown">CATEGORY</a>
@@ -36,32 +36,40 @@
                             Cancer</a>
                     </div>
                 </li>-->
-                <li><a href="/canopus/style-trans/">Style Transfer</a></li>
+                <li><a href="/canopus/style-trans/" id="about-button">Style Transfer</a></li>
             </ul>
         </div>
     </nav>
 </div>
 <div class="container">
+    {% comment %}
+        <!-- {% if images %}
+            <form action="/band/delete-folder/" method="post">
+            {% csrf_token %}
+            <input type="submit" value="Delete Images"/>
+            </form>
+        {% else %} -->
+        {% endcomment %}
     <div class="row">
-        <div class="col-lg-12">
-            <div class="card homeCard">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="card topForm">
                 <div class="card-body">
+                    <div class="card-title text-center"><h3>Enter Image to Search</h3></div>
                     <br>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h2 class="htop">This is Your PlayGround.</h2>
+                    <form class="" action="/canopus/imageUpload/" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="form-group row">
+                            <input class="imgUpload" type="file" name="image"/>
                         </div>
-                    </div>
-                    <div class="row rowBot">
-                        <div class="col-lg-6 offset-lg-6">
-                            <h2 class="hbot">Choose an option to get started.</h2>
+                        <div class="form-group row">
+                            <button class="btn" type="submit">Upload Image</button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<script type="text/javascript" src="{% static 'image/js/script.js' %}"></script>
+
 </body>
 </html>
